@@ -1,0 +1,153 @@
+/* Base layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('./../../public/WhosThis\ BI\ Blur.jpg')no-repeat center center/cover;
+  }
+  
+  .login-container {
+    text-align: center;
+  }
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  /* Tab menu (pill container) */
+  .tab-menu {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    gap: 10px;
+    padding: 4px;
+    width: fit-content;
+    border-radius: 12px;
+  }
+  
+  .decideButton {
+    min-width: 150px;
+    padding: 12px 0;
+    border: none;
+    background-color: transparent;
+    color: #555;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px; 
+    transition: background-color 0.3s ease;
+  }
+  
+  .decideButton.active {
+    background-color: #e3ebf9;
+    color: #1c3f94;
+  }
+  
+  .tab-menu button:first-child.active {
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .tab-menu button:last-child.active {
+    border-radius: 0 10px 10px 0;
+  }
+  .iconsFeatures{
+    color: #2f5fc1;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  .iconsFeatures i {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .iconsFeatures i:hover {
+    transform: scale(1.2);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .entry {
+    display: flex;
+    margin-left: 150px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 500px;
+  }
+  
+  .entry p {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .entry input[type="email"],
+  .entry input[type="text"],
+  .entry input[type="password"] {
+    width: 75%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .entry .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+  
+  .entry .forgot-password {
+    align-self: flex-end;
+    margin-right: 10px;
+    color: blue;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .entry button {
+    width: 70%;
+    padding: 12px;
+    background-color: #3f70db;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .entry button:hover {
+    background-color: #2f5fc1;
+  }
+  
+  .entry .register-link {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .entry .register-link a {
+    color: #1c3f94;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .loginPageMain{
+  background-color:rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  width: 500px;
+  box-shadow: 5px 10px 18px #000000;
+  }
