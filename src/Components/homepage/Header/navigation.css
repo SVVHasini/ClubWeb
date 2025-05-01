@@ -1,0 +1,60 @@
+.mainFrameNav {
+  position: fixed;         /* makes it stick to the top */
+  top: 0;                  /* aligns it at the top */
+  left: 0;                 /* aligns to the left edge */
+  right: 0;                /* aligns to the right edge */
+  z-index: 1000;           /* keeps it above other content */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* optional: adds a subtle shadow */
+}
+
+.logo-img{
+  max-block-size: 50px;
+}
+.NavButton{
+  background-color: #3f70db;
+  color: #fff;
+  min-width: 100px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin:0 10px;
+}
+.NavButton:hover{
+  background-color: #2f5fc1;
+}
+.NavSearch{
+  max-height: 30px;
+  border-radius: 5px;
+  border: none;
+  padding:5px 10px;
+}
+.NavSearch:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.SearchDiv{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: 20px;
+  align-items: center;
+  border:none;
+  border-radius: 5px;
+  background-color: #fff;
+  /* gap:5px; */
+}
+i{
+  margin-right: 5px;
+}

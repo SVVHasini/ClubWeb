@@ -1,0 +1,112 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #545252; /* Light cyan background color */
+}.application-form-container{
+  margin-top: 200px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 150px;
+  padding-bottom: 50px;
+  padding-right: 150px;
+  padding-top: 15px;
+  background-color:#f1f1f1;
+  border-radius: 30px;
+  width: 500px;
+  box-shadow: 5px 10px 18px #000000;
+  
+
+  align-items: center;
+}
+.form-title{
+  color:#3f70db;
+}
+.form-body{
+  display: flex;
+  flex-direction: column;
+  align-items:stretch;
+}
+.input-group{
+  display: flex;
+  flex-direction: row;
+  /* gap: 10px; */
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.application-form-container label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+.application-form-container input[type="text"],
+.application-form-container input[type="tel"],
+.application-form-container input[type="email"],
+.application-form-container select,
+.application-form-container textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 8px;
+font-size: 15px;
+box-sizing: border-box;
+}
+.application-form-container .input-group {
+  display: flex;
+  gap: 16px;
+}
+.application-form-container .input-group > div {
+  flex: 1;
+}
+.application-form-container .button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.application-form-container button {
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.application-form-container button:hover {
+  opacity: 0.9;
+}
+.application-form-container .btn-back {
+  background-color: #f1f1f1;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.application-form-container .btn-save {
+  background-color: #f9fafb;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.application-form-container .btn-next,
+.application-form-container .btn-submit {
+  background-color: #3f70db;
+  color: #fff;
+  gap: 30%;
+}
+
+.application-form-container .btn-next:hover,
+.application-form-container .btn-submit:hover {
+  background-color: #2f5fc1;
+}
+@media (max-width: 640px) {
+  .application-form-container {
+    padding: 20px
+  }
+
+  .application-form-container .input-group {
+    flex-direction: column;
+  }
+} 
